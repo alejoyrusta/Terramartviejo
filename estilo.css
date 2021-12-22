@@ -34,6 +34,9 @@ body{
     padding: 0;
     margin: 0;
 }
+.logo:hover{
+    transform: scale(1.2,1.2);
+}
 nav {
     padding: 1em;
     grid-area: nav;
@@ -55,6 +58,7 @@ nav li a {
 nav li a:hover {
     background: green;
     color: white;
+    transform: scale(1.2,1.2);
 }
 .main{
     grid-area: main;
@@ -71,6 +75,11 @@ body a{
     text-align:start;
     background-color: white;
     border:solid black 5px;
+    transition: all 1.5s;
+}
+.comisionBasica:hover{
+    transform: scale(1.01,1.01);
+    background-color: aqua;
 }
 .comisionBasica h2{
     text-align: center;
@@ -81,6 +90,11 @@ body a{
     text-align: start;
     background-color: white;
     border:solid black;
+    transition: all 1.5s;
+}
+.comisionPremium:hover{
+    transform: scale(1.01,1.01);
+    background-color: gold;
 }
 .comisionPremium h2{
     text-align: center;
@@ -110,12 +124,20 @@ body a{
 }
 .contacto{
     text-align: start;
+    transition: all 1.5s;
+}
+.contacto:hover{
+    background-color: darkgreen;
 }
 .contacto fieldset{
     background-color: white;
     padding: 10px;
     margin: 10px;
     border:5px solid black;
+    transition: all 1.5s;
+}
+.contacto fieldset:hover{
+    background-color: lawngreen;
 }
 .contacto legend{
     background-color: white;
@@ -137,6 +159,12 @@ body a{
     "dibujo dibujo dibujo dibujo"
     "dibujo dibujo dibujo dibujo"
     ;
+}
+.dibujos img{
+    transition: 1s;
+}
+.dibujos img:hover{
+    transform: scale(1.5,1.5);
 }
 .footer{
     background-color: black;
